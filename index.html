@@ -12,6 +12,8 @@
             <ol>
                 <li v-for="item in list">{{ item }}</li>
             </ol>
+            <input v-model="message">
+            <button v-on:click="handleClick">Click</button>
         </div>
         <script src="./main.js"></script>
     </body>
