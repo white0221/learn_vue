@@ -9,6 +9,9 @@
     <body>
         <div id="app">
             <p>{{ message }}</p>
+            <p>{{ message.length >= 5 ? '５文字以上' : '５文字未満' }}</p>
+            <input type="text" v-bind:value="inputed">
+            <br>
             <button v-on:click="show=!show">Switch</button>
             <transition>
                 <p v-if="show">SHOW</p>
