@@ -9,8 +9,8 @@
     <body>
         <div id="app">
             <p>{{ message }}</p>
-            <p>{{ count }} 回ボタンを押しました</p>
-            <button v-on:click="increment">インクリメント</button>
+            <p v-bind:class="{child: isChild, 'is-active': isActive}">Class</p>
+            <p v-bind:style="{color: textColor, backgroundColor: bgColor}">Style</p>
         </div>
         <script src="./main.js"></script>
     </body>
